@@ -162,10 +162,42 @@
     height: 75px;
 }
 
-.content h2::before {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+.pagetop{
+    z-index: 22;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    background-color: rgba(172, 172, 172, 0.95);
+    transition: all 1000ms 0s ease-in-out;
+}
+
+.pagetop a{
+    position: relative;
+    top: 14.5%;
+    left: -13%;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.pagetop a:before{
+    position: relative;
+    content: "↑";
+    top: -33%;
+    left: 37%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pagetop:hover{
+    animation: topmove 1s ease 0s 1;
 }
 
 .content{
@@ -177,6 +209,12 @@
     background-color: rgb(255, 255, 255);
     padding-top: 75px;
     margin-left: 30px;
+}
+
+.content h2::before {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
 }
   
 .content h2::after {
@@ -190,7 +228,31 @@
     background-color: black;
 }
 
-#hoge1{
+.content video, img, iframe{
+    width: 560px;
+    height: 315px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content video, img, iframe{
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#top, #script, #vrchat, #shader, #intern{
     margin-top: -75px;
     padding-top: 90px;
+}
+
+@keyframes topmove {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }

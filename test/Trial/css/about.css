@@ -162,6 +162,44 @@
     height: 75px;
 }
 
+.pagetop{
+    z-index: 22;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    background-color: rgba(172, 172, 172, 0.95);
+    transition: all 1000ms 0s ease-in-out;
+}
+
+.pagetop a{
+    position: relative;
+    top: 14.5%;
+    left: -13%;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.pagetop a:before{
+    position: relative;
+    content: "↑";
+    top: -33%;
+    left: 37%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pagetop:hover{
+    animation: topmove 1s ease 0s 1;
+}
+
 .content h2::before {
     width: 100px;
     height: 100px;
@@ -211,6 +249,11 @@ table th, td{
     border-bottom: 2px solid #000;
 }
 
+#top{
+    margin-top: -75px;
+    padding-top: 90px;
+}
+
 #general{
     margin-top: -75px;
     padding-top: 90px;
@@ -224,4 +267,16 @@ table th, td{
 #tool{
     margin-top: -75px;
     padding-top: 90px;
+}
+
+@keyframes topmove {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
