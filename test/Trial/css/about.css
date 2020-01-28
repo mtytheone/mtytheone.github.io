@@ -87,7 +87,7 @@
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
     width: 85%;
     height: 75px;
-    background: rgb(104, 211, 62);
+    background: rgba(128, 255, 78, 0.4);
     color: #fff;
     z-index: 2;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -96,7 +96,7 @@
 
 .slidebar:hover{
     transform-origin: left top;
-    background: rgb(45, 158, 0);
+    background: rgb(57, 202, 0);
     width: 99.7%;
 }
 
@@ -172,6 +172,7 @@
     position: absolute;
     top: 0px;
     left: 14.4%;
+    height: 150%;
     background-color: rgb(255, 255, 255);
     padding-top: 75px;
     margin-left: 30px;
@@ -188,16 +189,25 @@
     background-color: black;
 }
 
+.content table{
+    border: 1px;
+    border-collapse: collapse;
+}
+
 .toptable{
     background-color: rgb(228, 228, 228);
     border-bottom: 2px solid #000;
 }
 
-table td {
+table th, td{
     padding: 0px 20px 0px 20px;
+    text-align: center;
+    border: solid 1px #000;
 }
 
 .tablebottombold{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
     border-bottom: 2px solid #000;
 }
 

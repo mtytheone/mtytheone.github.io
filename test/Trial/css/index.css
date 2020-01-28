@@ -1,179 +1,137 @@
-.top{
-    z-index: 11;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    bottom: 28%;
-    width: 15%;
-    height: 100%;
-    text-align: center;
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+body {
+    font-family: "Squada One", sans-serif;
+    background: #000e12;
+    color: #daf6ff;
 }
 
-.box1{
-    z-index: 2;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-    z-index: 13;
-    position: fixed;
-    top: 5%;
-    left: 4%;
-    width: 100px;
-    height: 100px;
-    transform: scale(0.9) rotate(-70deg);
-    background: rgb(255, 85, 85);
-}
-
-.box2{
-    z-index: 2;
-    box-shadow: 0px 0px 17.5px 0px rgba(0, 0, 0, 0.25);
-    z-index: 12;
-    position: fixed;
-    top: 5%;
-    left: 4%;
-    width: 100px;
-    height: 100px;
-    transform: scale(0.875) rotate(-45deg);
-    background: rgb(246, 255, 115);
-}
-
-.box3{
-    z-index: 2;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
-    z-index: 11;
-    position: fixed;
-    top: 5%;
-    left: 4%;
-    width: 100px;
-    height: 100px;
-    transform: scale(0.85) rotate(-20deg);
-    background: rgb(56, 255, 49);
-}
-
-.top h1{
-    margin-top: 160px
-}
-
-.sidebar{
-    z-index: 10;
-    position: fixed;
-    top: 29%;
-    left: 0px;
-    width: 15%;
-    height: 100%;
-    text-align: center;
-    background-color: rgb(61, 81, 148);
-    color: #fff;
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-.sidebar a{
-    text-decoration: none;
-}
-
-.barspace{
-    margin-top: 60px;
-}
-
-.slidebar{
-    z-index: 10;
-    margin-top: 20px;
-    text-align: center;
-    line-height: 78px;
-    font-size: 150%;
-    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
-    width: 85%;
-    height: 75px;
-    background: rgb(104, 211, 62);
-    color: #fff;
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    transition: all 800ms 0s ease;
-}
-
-.slidebar:hover{
-    transform-origin: left top;
-    background: rgb(45, 158, 0);
-    width: 99.7%;
-}
-
-.sidebar p{
-    position: relative;
-    top: 6%;
-    left: -6%;
-}
-
-.headbar{
-    z-index: 10;
+.bluelight {
+    display: table;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    top: 0px;
-    left: 15%;
-    width: 85%;
-    height: 75px;
-    text-align: center;
-    background-color: rgb(170, 169, 169);
-    color: #fff;
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.headbar a{
+.bluelight a {
+    display: table-cell;
+    font-size: 3em;
     text-decoration: none;
-}
-
-.headbar ul{
-    overflow: hidden;
-    list-style: none;
-    margin: 0 auto;
-    z-index: 20;
-}
-
-.headbar ul li{
-    display: inline-block;
-    padding: 26px 10px 20px 10px;
-}
-
-.headbar ul li:hover {
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    transform: scale(1, 1);
-}
-
-.downbar{
-    position: relative;
-    top: -27px;
-    width: 170px;
-    height: 0px;
-    text-transform: uppercase;
     text-align: center;
-    line-height: 78px;
-    background-color: rgb(131, 131, 131);
-    color: rgb(245, 245, 245);
-    transition: all 300ms 0s ease;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: background 1s, border-width 0.5s cubic-bezier(0.075,0.82,0.165,1), text-shadow 0.5s;
+    color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10,175,230,0);
+    box-shadow: 0 0 0 rgba(10,175,230,0), inset 0 0 0 rgba(10,175,230,0);
+    background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0) 0%,rgba(10,175,230,0) 90%);
+    border: 0 dotted rgba(10,175,230,0);
 }
 
-.downbar:hover{
-    height: 75px;
+.bluelight a:hover {
+    color: #fff;
+    text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
+    background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0.3) 0%,rgba(10,175,230,0) 60%);
 }
 
-.content{
+.bluelight:before,
+.bluelight:after,
+.bluelight a:before,
+.bluelight a:after {
+    transition: 0.5s ease-in-out;
+    content: "";
+    display: block;
     position: absolute;
-    top: 0px;
-    left: 14.4%;
-    width: 80%;
-    height: 4100px;
-    background-color: rgb(255, 255, 255);
-    padding-top: 75px;
-    margin-left: 30px;
+    border: 60px dashed transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-#hoge1{
-    margin-top: -75px;
-    padding-top: 90px;
+.bluelight:before {
+    animation: rotate 20s linear 0s infinite;
+    width: 180%;
+    height: 180%;
+    border: 3px dotted rgba(10,175,230,0.03);
+    z-index: -1;
 }
+
+.bluelight:after {
+    animation: rotate 12s linear 0s infinite reverse;
+    border: 70px dashed rgba(10,175,230,0.01);
+    width: 190%;
+    height: 190%;
+    z-index: -2;
+}
+
+.bluelight a:before {
+    animation: rotate 5s linear 0s infinite reverse;
+    width: 120%;
+    height: 120%;
+    border: 50px dashed rgba(10,175,230,0.015);
+}
+
+.bluelight a:after {
+    animation: rotate 4s linear 0s infinite;
+    border: 18px dashed rgba(10,175,230,0);
+    width: 120%;
+    height: 120%;
+}
+
+.bluelight:hover:before {
+    border-color: rgba(10,175,230,0.7);
+}
+
+.bluelight:hover:after {
+    border-color: rgba(10,175,230,0.1);
+}
+
+.bluelight:hover a:before {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bluelight:hover a:after {
+    border-color: rgba(10,175,230,0.4);
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+p.caption {
+    font-size: 0.7em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10,175,230,0);
+}
+
+/*Copyright (c) 2020 - hatuxes - https://codepen.io/gau/pen/ogqjzw
+
+Permission is hereby granted, free of charge, to any person 
+obtaining a copy of this software and associated documentation 
+files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, 
+merge, publish, distribute, sublicense, and/or sell copies of 
+the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall 
+be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.*/
