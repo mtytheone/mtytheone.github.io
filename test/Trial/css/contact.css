@@ -162,15 +162,32 @@
     height: 75px;
 }
 
+.content h2::before {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
 .content{
     position: absolute;
     top: 0px;
     left: 14.4%;
-    width: 85%;
+    width: 80%;
     height: 4100px;
     background-color: rgb(255, 255, 255);
     padding-top: 75px;
     margin-left: 30px;
+}
+  
+.content h2::after {
+    content: '';
+    position: relative;
+    display: block;
+    top: -2px;
+    left: 0%;
+    width: 900px;
+    height: 2px;
+    background-color: black;
 }
 
 #hoge1{
