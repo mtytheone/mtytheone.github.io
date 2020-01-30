@@ -3,9 +3,8 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    bottom: 28%;
-    width: 15%;
-    height: 100%;
+    width: 237px;
+    height: 222px;
     text-align: center;
     background-color: #fff;
     color: rgb(0, 0, 0);
@@ -18,8 +17,8 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     z-index: 13;
     position: fixed;
-    top: 5%;
-    left: 4%;
+    top: 40px;
+    left: 65px;
     width: 100px;
     height: 100px;
     transform: scale(0.9) rotate(-70deg);
@@ -31,8 +30,8 @@
     box-shadow: 0px 0px 17.5px 0px rgba(0, 0, 0, 0.25);
     z-index: 12;
     position: fixed;
-    top: 5%;
-    left: 4%;
+    top: 40px;
+    left: 65px;
     width: 100px;
     height: 100px;
     transform: scale(0.875) rotate(-45deg);
@@ -44,8 +43,8 @@
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     z-index: 11;
     position: fixed;
-    top: 5%;
-    left: 4%;
+    top: 40px;
+    left: 65px;
     width: 100px;
     height: 100px;
     transform: scale(0.85) rotate(-20deg);
@@ -59,9 +58,9 @@
 .sidebar{
     z-index: 10;
     position: fixed;
-    top: 29%;
+    top: 222px;
     left: 0px;
-    width: 15%;
+    width: 237px;
     height: 100%;
     text-align: center;
     background-color: rgb(61, 81, 148);
@@ -108,9 +107,9 @@
 
 .headbar{
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 0px;
-    left: 15%;
+    left: 237px;
     width: 85%;
     height: 75px;
     text-align: center;
@@ -171,11 +170,10 @@
 .content{
     position: absolute;
     top: 0px;
-    left: 14.4%;
-    width: 80%;
-    height: 4100px;
+    left: 228px;
+    height: 150%;
     background-color: rgb(255, 255, 255);
-    padding-top: 90px;
+    padding-top: 75px;
     margin-left: 30px;
 }
 
@@ -198,9 +196,4 @@
 
 .content a{
     text-decoration: none;
-}
-
-#hoge1{
-    margin-top: -75px;
-    padding-top: 90px;
 }
