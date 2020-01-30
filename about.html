@@ -2,91 +2,151 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>About</title>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Portfolio - About</title>
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="shortcut icon" href="image/favicon.PNG">
     </head>
+
     <body>
         <header>
-            <ul>
-                <li><a href="./index.html" class="btn2">Top</a></li>
-                <li><a href="./about.html" class="btn4">About</a></li>
-                <li><a href="./product.html" class="btn4">Product</a></li>
-                <li><a href="./contact.html" class="btn4">Contact</a></li>
-            </ul>
+            <a href="./index.html">
+                <div class="top">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <h1>Portfolio</h1>
+                </div>
+            </a>
+
+            <div class="sidebar">
+                <div class="barspace"></div>
+                <a href="./index.html"><div class="slidebar">Title</div></a>
+                <div class="slidebar">About</div>
+                <a href="./product.html"><div class="slidebar">Product</div></a>
+                <a href="./contact.html"><div class="slidebar">Contact</div></a>
+                <p>&copy; 2020 hatuxes</p>
+            </div>
         </header>
 
-        <h2><div style="margin-top: 80px">基本情報</div></h2>
+        <main>
+            <div class="headbar">
+                <ul>
+                    <li><a href="#general"><div class="downbar">基本情報</div></a></li>
+                    <li><a href="#language"><div class="downbar">言語情報</div></a></li>
+                    <li><a href="#tool"><div class="downbar">開発ツール等</div></a></li>
+                </ul>
+            </div>
+            
+            <div class="pagetop"><a href="#top">Top</a></div>
 
-        <ul class="dd">
-            <li>DisplayName:<b>ハツェ</b></li>
-            <li>Race:<b>Japanese</b></li>
-            <li><a href="https://github.com/mtytheone" target="_blank" rel="noopener noreferrer">Github</a></li>
-            <li><a href="https://qiita.com/hatuxes"  target="_blank" rel="noopener noreferrer">Qiita</a></li>
-            <li><a href="https://neort.io/KywugeEW66YGF7KXv47UL5CHmZF3"  target="_blank" rel="noopener noreferrer">NEORT</a></li>
-            <li><a href="https://hatuxes.hatenablog.jp/entry/2019/11/06/141649"  target="_blank" rel="noopener noreferrer">Blog</a></li>
-        </ul>
+            <div class="content">
+                <div id="top"></div>
+                <h1><b>私について</b></h1>
+                情報は時々で更新されます。<br>
+                <h2 id="general">基本情報</h2>
+                DisplayName:<b> ハツェ</b><br>
+                Race:<b> Japanese</b><br><br>
 
-        <h2>言語情報</h2>
-        <table border="1" style="border-collapse: collapse;">
-            <tr>
-                <th align="center">人工言語</th>
-                <th align="center">使用年数</th>
-                <th align="center">スキルレベル</th>
-                <th align="center">自身度</th>
-            </tr>
-            <tr>
-                <td align="center">UnityC#</td>
-                <td align="center">2年半</td>
-                <td align="center">ゲーム制作、エディタ拡張程度</td>
-                <td align="center">基本的なプログラム程度ならあり</td>
-            </tr>
-            <tr>
-                <td align="center">GLSL</td>
-                <td align="center">2年</td>
-                <td align="center">簡単なライブコーディング程度</td>
-                <td align="center">少しあり</td>
-            </tr>
-            <tr>
-                <td align="center">Python</td>
-                <td align="center">半月</td>
-                <td align="center">DiscordBot程度</td>
-                <td align="center">書けるが自信はない</td>
-            </tr>
-            <tr>
-                <td align="center">Java</td>
-                <td align="center">数か月</td>
-                <td align="center">簡単な数式程度</td>
-                <td align="center">なし</td>
-            </tr>
-        </table>
+                <table>
+                    <tr>
+                        <td colspan="4" class="tablebottombold">各種リンク</td>
+                    </tr>
 
-        <h2>開発ツール等</h2>
-        <table border="1" style="border-collapse: collapse;">
-            <tr>
-                <th align="center">ツール</th>
-                <th align="center">使用年数</th>
-                <th align="center">備考</th>
-            </tr>
-            <tr>
-                <td align="center">Unity</td>
-                <td align="center">2年半</td>
-                <td align="center"> - </td>
-            </tr>
-            <tr>
-                <td align="center">VisualStudio 2018~</td>
-                <td align="center">2年</td>
-                <td align="center">コーディングに使う程度</td>
-            </tr>
-            <tr>
-                <td align="center">SourceTree(Git)</td>
-                <td align="center">1年</td>
-                <td align="center"> - </td>
-            </tr>
-            <tr>
-                <td align="center">Eclipse</td>
-                <td align="center">1年</td>
-                <td align="center">授業で使用した程度</td>
-            </tr>
-        </table>
+                    <tr>
+                        <td><a href="https://github.com/mtytheone" target="_blank" rel="noopener noreferrer">Github</a></td>
+                        <td><a href="https://qiita.com/hatuxes"  target="_blank" rel="noopener noreferrer">Qiita</a></td>
+                        <td><a href="https://neort.io/KywugeEW66YGF7KXv47UL5CHmZF3"  target="_blank" rel="noopener noreferrer">NEORT</a></td>
+                        <td><a href="https://hatuxes.hatenablog.jp/entry/2019/11/06/141649"  target="_blank" rel="noopener noreferrer">Blog</a></td>
+                    </tr>
+                </table>
+                <br>
+
+                <h2 id="language">言語情報</h2>
+                <table>
+                    <tr class="toptable">
+                        <th>人工言語</th>
+                        <th>使用年数</th>
+                        <th>スキルレベル</th>
+                        <th>自身度</th>
+                    </tr>
+
+                    <tr>
+                        <td>UnityC#</td>
+                        <td>1年半</td>
+                        <td>ゲーム制作、エディタ拡張程度</td>
+                        <td>基本的なプログラム程度ならあり</td>
+                    </tr>
+
+                    <tr>
+                        <td>shaderlabs</td>
+                        <td>1年半</td>
+                        <td>演出に使用する程度</td>
+                        <td>ベイク動作をさせないならあり</td>
+                    </tr>
+
+                    <tr>
+                        <td>GLSL</td>
+                        <td>1年</td>
+                        <td>簡単なライブコーディング程度</td>
+                        <td>少しあり</td>
+                    </tr>
+
+                    <tr>
+                        <td>Python</td>
+                        <td>半月</td>
+                        <td>DiscordBot程度</td>
+                        <td>書けるが自信はない</td>
+                    </tr>
+
+                    <tr>
+                        <td>Java</td>
+                        <td>数か月</td>
+                        <td>簡単な数式程度</td>
+                        <td>なし</td>
+                    </tr>
+                </table>
+                <br>
+
+                <h2 id="tool">開発ツール等</h2>
+                <table>
+                    <tr class="toptable">
+                        <th>ツール</th>
+                        <th>使用年数</th>
+                        <th>備考</th>
+                    </tr>
+
+                    <tr>
+                        <td>Unity</td>
+                        <td>2年半</td>
+                        <td> - </td>
+                    </tr>
+
+                    <tr>
+                        <td>VisualStudio 2018~</td>
+                        <td>2年</td>
+                        <td>C系のコーディングに使う程度</td>
+                    </tr>
+
+                    <tr>
+                        <td>VisualStudioCode</td>
+                        <td>1年</td>
+                        <td>コーディングに使う程度</td>
+                    </tr>
+
+                    <tr>
+                        <td>Git(SourceTree)</td>
+                        <td>1年</td>
+                        <td> - </td>
+                    </tr>
+
+                    <tr>
+                        <td>Eclipse</td>
+                        <td>1年</td>
+                        <td>授業で使用した程度</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </main>
     </body>
 </html>
