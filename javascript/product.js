@@ -1,6 +1,7 @@
 $(function(){
+    var ua = navigator.userAgent;
     var width=$(window).width();
-    if(width<640){
+    if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
         $("#webgl-frame-notime").html('<div style="width:560px;height:315px;"><iframe frameborder="0" height="100%" src="https://vrchive.com/e/rgni/r0p0?play_btn=1" width="100%" style="height: 100%; margin: 0 auto; padding: 0 0 0 0; width: 100%;" allowfullscreen="true"></iframe></div>');
         $("#webgl-frame-urp").html('<img src="./video/thmb/URP.PNG"></image><br></br>');
         $("spongetunnel").html('<video src="video/SpongeTunnel.mp4" poster="video/thmb/SpongeTunnel.png" controls playsinline></video><br>');
