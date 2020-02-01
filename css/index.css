@@ -50,9 +50,9 @@ body {
 }
 
 .bluelight:before {
-    animation: rotate 20s linear 0s infinite;
-    width: 180%;
-    height: 180%;
+    animation: rotate 9s linear 0s infinite reverse;
+    width: 80%;
+    height: 80%;
     border: 3px dotted rgba(10,175,230,0.03);
     z-index: -1;
 }
@@ -60,23 +60,23 @@ body {
 .bluelight:after {
     animation: rotate 12s linear 0s infinite reverse;
     border: 70px dashed rgba(10,175,230,0.01);
-    width: 190%;
-    height: 190%;
+    width: 120%;
+    height: 120%;
     z-index: -2;
 }
 
 .bluelight a:before {
-    animation: rotate 5s linear 0s infinite reverse;
-    width: 120%;
-    height: 120%;
-    border: 50px dashed rgba(10,175,230,0.015);
+    animation: rotate 12s linear 0s infinite;
+    width: 117%;
+    height: 117%;
+    border: 40px dashed rgba(10,175,230,0.015);
 }
 
 .bluelight a:after {
     animation: rotate 4s linear 0s infinite;
-    border: 18px dashed rgba(10,175,230,0);
-    width: 120%;
-    height: 120%;
+    border: 10px dashed rgba(10,175,230,0);
+    width: 30%;
+    height: 30%;
 }
 
 .bluelight:hover:before {

@@ -52,7 +52,7 @@
 }
 
 .top h1{
-    margin-top: 160px;
+    margin-top: 160px
 }
 
 .sidebar{
@@ -199,12 +199,6 @@
     animation: topmove 1s ease 0s 1;
 }
 
-.content h2::before {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-
 .content{
     position: absolute;
     top: 0px;
@@ -213,6 +207,12 @@
     background-color: rgb(255, 255, 255);
     padding-top: 75px;
     margin-left: 30px;
+}
+
+.content h2::before {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
 }
   
 .content h2::after {
@@ -226,44 +226,19 @@
     background-color: black;
 }
 
-.content table{
-    border: 1px;
-    border-collapse: collapse;
+.content video, img, iframe{
+    width: 560px;
+    height: 315px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.toptable{
-    background-color: rgb(228, 228, 228);
-    border-bottom: 2px solid #000;
+.content video, img, iframe{
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-table th, td{
-    padding: 0px 20px 0px 20px;
-    text-align: center;
-    border: solid 1px #000;
-}
-
-.tablebottombold{
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 2px solid #000;
-}
-
-#top{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#general{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#language{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#tool{
+#top, #script, #vrchat, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
     margin-top: -75px;
     padding-top: 90px;
 }
