@@ -4,17 +4,17 @@ body {
     color: #daf6ff;
 }
 
-.bluelight {
+.PC {
     display: table;
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 50%;
+    left: 25%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
 
-.bluelight a {
+.PC a {
     display: table-cell;
     font-size: 3em;
     text-decoration: none;
@@ -29,16 +29,16 @@ body {
     border: 0 dotted rgba(10,175,230,0);
 }
 
-.bluelight a:hover {
+.PC a:hover {
     color: #fff;
     text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
     background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0.3) 0%,rgba(10,175,230,0) 60%);
 }
 
-.bluelight:before,
-.bluelight:after,
-.bluelight a:before,
-.bluelight a:after {
+.PC:before,
+.PC:after,
+.PC a:before,
+.PC a:after {
     transition: 0.5s ease-in-out;
     content: "";
     display: block;
@@ -49,7 +49,7 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.bluelight:before {
+.PC:before {
     animation: rotate 9s linear 0s infinite reverse;
     width: 80%;
     height: 80%;
@@ -57,7 +57,7 @@ body {
     z-index: -1;
 }
 
-.bluelight:after {
+.PC:after {
     animation: rotate 12s linear 0s infinite reverse;
     border: 70px dashed rgba(10,175,230,0.01);
     width: 120%;
@@ -65,33 +65,124 @@ body {
     z-index: -2;
 }
 
-.bluelight a:before {
+.PC a:before {
     animation: rotate 12s linear 0s infinite;
     width: 117%;
     height: 117%;
     border: 40px dashed rgba(10,175,230,0.015);
 }
 
-.bluelight a:after {
+.PC a:after {
     animation: rotate 4s linear 0s infinite;
     border: 10px dashed rgba(10,175,230,0);
     width: 30%;
     height: 30%;
 }
 
-.bluelight:hover:before {
+.PC:hover:before {
     border-color: rgba(10,175,230,0.7);
 }
 
-.bluelight:hover:after {
+.PC:hover:after {
     border-color: rgba(10,175,230,0.1);
 }
 
-.bluelight:hover a:before {
+.PC:hover a:before {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-.bluelight:hover a:after {
+.PC:hover a:after {
+    border-color: rgba(10,175,230,0.4);
+}
+
+.Mobile {
+    display: table;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Mobile a {
+    display: table-cell;
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: background 1s, border-width 0.5s cubic-bezier(0.075,0.82,0.165,1), text-shadow 0.5s;
+    color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10,175,230,0);
+    box-shadow: 0 0 0 rgba(10,175,230,0), inset 0 0 0 rgba(10,175,230,0);
+    background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0) 0%,rgba(10,175,230,0) 90%);
+    border: 0 dotted rgba(10,175,230,0);
+}
+
+.Mobile a:hover {
+    color: #fff;
+    text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
+    background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0.3) 0%,rgba(10,175,230,0) 60%);
+}
+
+.Mobile:before,
+.Mobile:after,
+.Mobile a:before,
+.Mobile a:after {
+    transition: 0.5s ease-in-out;
+    content: "";
+    display: block;
+    position: absolute;
+    border: 60px dashed transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Mobile:before {
+    animation: rotate 9s linear 0s infinite;
+    width: 80%;
+    height: 80%;
+    border: 3px dotted rgba(10,175,230,0.03);
+    z-index: -1;
+}
+
+.Mobile:after {
+    animation: rotate 12s linear 0s infinite;
+    border: 70px dashed rgba(10,175,230,0.01);
+    width: 120%;
+    height: 120%;
+    z-index: -2;
+}
+
+.Mobile a:before {
+    animation: rotate 12s linear 0s infinite reverse;
+    width: 117%;
+    height: 117%;
+    border: 40px dashed rgba(10,175,230,0.015);
+}
+
+.Mobile a:after {
+    animation: rotate 4s linear 0s infinite reverse;
+    border: 10px dashed rgba(10,175,230,0);
+    width: 30%;
+    height: 30%;
+}
+
+.Mobile:hover:before {
+    border-color: rgba(10,175,230,0.7);
+}
+
+.Mobile:hover:after {
+    border-color: rgba(10,175,230,0.1);
+}
+
+.Mobile:hover a:before {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.Mobile:hover a:after {
     border-color: rgba(10,175,230,0.4);
 }
 
