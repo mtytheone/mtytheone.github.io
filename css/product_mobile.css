@@ -3,8 +3,8 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     background-color: #fff;
     color: rgb(0, 0, 0);
@@ -17,10 +17,10 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     z-index: 13;
     position: fixed;
-    top: 7px;
-    left: 12px;
-    width: 25px;
-    height: 25px;
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
     transform: scale(0.9) rotate(-70deg);
     background: rgb(255, 85, 85);
 }
@@ -30,10 +30,10 @@
     box-shadow: 0px 0px 17.5px 0px rgba(0, 0, 0, 0.25);
     z-index: 12;
     position: fixed;
-    top: 7px;
-    left: 12px;
-    width: 25px;
-    height: 25px;
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
     transform: scale(0.875) rotate(-45deg);
     background: rgb(246, 255, 115);
 }
@@ -43,24 +43,24 @@
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     z-index: 11;
     position: fixed;
-    top: 7px;
-    left: 12px;
-    width: 25px;
-    height: 25px;
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
     transform: scale(0.85) rotate(-20deg);
     background: rgb(56, 255, 49);
 }
 
 .top h1{
-    font-size: 10px;
-    margin-top: 35px;
+    font-size: 16px;
+    margin-top: 77px;
 }
 
 .headerback {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 50px;
+    height: 100px;
     margin: 0;
     padding: 0;
     background: rgb(61, 81, 148);
@@ -68,7 +68,7 @@
 
 .headerback .header {
     width: 300px;
-    height: 50px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -84,11 +84,11 @@
 .headerback .header li a {
     display: block;
     width: 60px;
-    height: 50px;
+    height: 100px;
     text-align: center;
     color: #fff;
     font-size: 12px;
-    line-height: 3.2;
+    line-height: 3.7;
     background: rgb(61, 81, 148);
     box-sizing: border-box;
     text-decoration: none;
@@ -113,8 +113,8 @@
 }
 
 .headerback .header li ul {
-    top: 50px;
-    left: -50px;
+    top: 100px;
+    left: -100px;
     position: absolute;
 }
 
@@ -129,7 +129,7 @@
 
 .headerback .header li:hover > ul > li {
     overflow: visible;
-    height: 50px;
+    height: 100px;
 }
 
 .headerback .header li ul li ul {
@@ -192,9 +192,9 @@
     .headerback .header li a {
         display: block;
         width: 150px;
-        height: 50px;
-        font-size: 14px;
-        line-height: 3.8;
+        height: 100px;
+        font-size: 28px;
+        line-height: 3.7;
     }
     
     .headerback .header li:first-child {
@@ -229,7 +229,7 @@
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 50px;
+    height: 100px;
     margin: 0;
     padding: 0;
     background: rgb(170, 169, 169);
@@ -237,7 +237,7 @@
 
 .fotterback .fotter {
     width: 300px;
-    height: 50px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -253,7 +253,7 @@
 .fotterback .fotter li a {
     display: block;
     width: 60px;
-    height: 50px;
+    height: 100px;
     text-align: center;
     color: #fff;
     font-size: 12px;
@@ -282,8 +282,8 @@
 }
 
 .fotterback .fotter li ul {
-    top: 50px;
-    left: -50px;
+    top: 100px;
+    left: -100px;
     position: absolute;
 }
 
@@ -298,7 +298,7 @@
 
 .fotterback .fotter li:hover > ul > li {
     overflow: visible;
-    height: 50px;
+    height: 100px;
 }
 
 .fotterback .fotter li ul li ul {
@@ -361,9 +361,9 @@
     .fotterback .fotter li a {
         display: block;
         width: 150px;
-        height: 50px;
-        font-size: 14px;
-        line-height: 3.8;
+        height: 100px;
+        font-size: 28px;
+        line-height: 3.7;
     }
     
     .fotterback .fotter li:first-child {
@@ -396,12 +396,12 @@
 .pagetop{
     z-index: 22;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
-    width: 90px;
-    height: 90px;
+    right: 10px;
+    bottom: 120px;
+    width: 60px;
+    height: 60px;
     text-align: center;
-    line-height: 90px;
+    line-height: 88px;
     border-radius: 50%;
     background-color: rgba(172, 172, 172, 0.95);
     transition: all 1000ms 0s ease-in-out;
@@ -409,32 +409,28 @@
 
 .pagetop a{
     position: relative;
-    top: 14.5%;
-    left: -13%;
+    top: -5%;
+    left: -17%;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .pagetop a:before{
     position: relative;
     content: "↑";
-    top: -33%;
-    left: 37%;
+    top: -35%;
+    left: 45%;
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
-}
-
-.pagetop:hover{
-    animation: topmove 1s ease 0s 1;
 }
 
 .content{
     z-index: -2;
     position: absolute;
-    top: 40px;
+    top: 100px;
     left: 20px;
     height: 150%;
     background-color: rgb(255, 255, 255);
