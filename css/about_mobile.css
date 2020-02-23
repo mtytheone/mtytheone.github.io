@@ -397,10 +397,10 @@
 .pagetop{
     z-index: 22;
     position: fixed;
-    right: 10px;
-    bottom: 120px;
-    width: 60px;
-    height: 60px;
+    right: 30px;
+    bottom: 135px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 88px;
     border-radius: 50%;
@@ -410,10 +410,10 @@
 
 .pagetop a{
     position: relative;
-    top: -5%;
+    top: 35%;
     left: -17%;
     color: white;
-    font-size: 20px;
+    font-size: 60px;
     text-decoration: none;
 }
 
@@ -421,10 +421,10 @@
     position: relative;
     content: "↑";
     top: -35%;
-    left: 45%;
+    left: 52%;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 48px;
     text-decoration: none;
 }
 
