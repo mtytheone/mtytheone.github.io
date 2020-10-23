@@ -226,7 +226,7 @@
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }
     
-    #top, #script, #vrchat, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
+    #top, #personalproduction, #coproduction, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
         margin-top: -75px;
         padding-top: 90px;
     }
@@ -446,6 +446,10 @@
     .pagetop:hover{
         animation: topmove 1s ease 0s 1;
     }
+
+    .pagetop:not(:hover){
+        animation: topreturnmove 1s ease 0s 1;
+    }
     
     .content{
         position: absolute;
@@ -486,7 +490,7 @@
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }
     
-    #top, #script, #vrchat, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
+    #top, #personalproduction, #coproduction, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
         margin-top: -75px;
         padding-top: 90px;
     }
@@ -495,7 +499,13 @@
         0% {
             transform: translateY(0px);
         }
-        50% {
+        100% {
+            transform: translateY(-15%);
+        }
+    }
+
+    @keyframes topreturnmove {
+        0% {
             transform: translateY(-15%);
         }
         100% {

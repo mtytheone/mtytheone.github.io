@@ -32,8 +32,8 @@
     <main>
         <div class="fotterback">
             <ul class="fotter">
-                <li><a href="#script">スクリプト</a></li>
-                <li><a href="#vrchat">VRChat</a></li>
+                <li><a href="#personalproduction">個人製作</a></li>
+                <li><a href="#coproduction">共同制作</a></li>
                 <li><a href="#shader">シェーダー</a></li>
                 <li><a href="#intern">インターン</a></li>
             </ul>
@@ -45,19 +45,34 @@
             <div id="top"></div>
             <h1><b>制作物</b></h1>
             カテゴリーごと、公開日順に表示しています。<br>
-            <h2 id="script">スクリプト</h2>
-            <h3 id="soundanalize">プログラミング「音解析」</h3>
+            <h2 id="script">Unity - 個人制作物</h2>
+            <!--<h3 id="soundanalize">プログラミング「音解析」</h3>
             <b>公開日:</b> 2019/10/29<br>
-            <b>プラットフォーム:</b> StandardUnity<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             インターンで生かした経験をもとに、AudioSourceから音を解析してそれをスポットライトの色に反映しています。<br>
             音楽のテンションに応じてライトの発光度、Rangeを変えるのが難しかったですが、サンプリング数を調整することによって解決することが出来ました。<br>
             （Music by Shadow -Bustre-）<br><br>
-            <video src="video/AudioVisualizer.mp4" poster="video/thmb/AudioVisual.png" controls playsinline></video><br>
+            <video src="video/AudioVisualizer.mp4" poster="video/thmb/AudioVisual.png" controls playsinline></video><br>-->
+
+            <h3>VRChatワールド「No time.」</h3>
+            <b>公演日:</b> 2019/07/18<br>
+            <b>公開場所:</b> <a href="https://www.vrchat.com/i/hope-gunterstop-36be6" target="_blank"
+                rel="noopener noreferrer">VRChat</a><br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
+            <b>概要と所見:</b><br>
+            のんびりと人が集まれる場所を目指して製作したVRChatのワールドになります。<br>
+            このワールドはVR Architecture Award(VRAA) 01というコンテストにも応募した作品であり、選外佳作にも選ばれました。<br>
+            最初はただのんびりと過ごせるような空間を作る予定でしたが、少し哀しさを取り入れるため、モノクロにしました。<br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sv5a53eEC_k" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe><br>
 
             <h3>ゲーム制作「Star Fall」</h3>
             <b>公開日:</b> 2020/03/16<br>
-            <b>プラットフォーム:</b> StandardUnity<br>
+            <b>公開場所:</b> <a href="https://github.com/mtytheone/StarFall/releases" target="_blank"
+                rel="noopener noreferrer">Github</a><br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             ゲーム制作が夢だったので、簡単なゲームを一から作りました。イラストはいらすとやの物を使わせていただいてます。<br>
             敵も複数パターン用意したわけではないため、interface等は使わずコードの構造もそこまで複雑にはなっていないと思います。<br>
@@ -68,19 +83,26 @@
                 rel="noopener noreferrer">Github</a>でリリースしていますので、良かったら一度遊んでください。<br><br>
             <video src="video/StarFallVideo.mp4" poster="video/thmb/StarFall.png" controls playsinline></video><br>
 
-            <h2 id="vrchat">VRChat</h2>
-            <h3>VRChatワールド「Fall_Night」</h3>
-            <b>公開日:</b> 2019/02/23<br>
-            <b>プラットフォーム:</b> VRChat<br>
+            <h3>ゲーム制作「UnitBarrage」</h3>
+            <b>公開日:</b> 2020/10/05<br>
+            <b>公開場所:</b> <a href="https://github.com/mtytheone/UnitBarrage/releases" target="_blank"
+                rel="noopener noreferrer">Github</a><br>
+            <b>開発プラットフォーム:</b> Unity URP<br>
             <b>概要と所見:</b><br>
-            少し暗くも落ち着ける場所を目指して製作したVRChatのワールドになります。<br>
-            鳥居の上に座ってたまに降る色違いの流れ星を探すという体験をおすすめしており、パーティクルとポストエフェクトを中心に製作しました。<br>
-            また、本当は3D表示させたかったですが、WebGL非対応なシェーダーを使っているため動画にしました。<br><br>
-            <video src="video/Fall_Night.mp4" poster="video/thmb/Fall_Night.png" controls playsinline></video><br>
+            Unityの新しい機能であるECS(EntityComponentSystem)を使用した二作目のゲームです。<br>
+            今回は、MonoBehavior(UnityC#)だけに頼らずになるべく出来るところは純粋なC#で書くようにしました。<br>
+            Unityの中でもかなり最新の機能を使用しているため、ネットにもほとんど情報が無い中で制作をしましたが、<br>
+            数少ない情報を頼りに出来る部分を自分で研究しながらなんとか形にすることが出来たと思っています。<br>
+            おまけとして、GoogleSpreadSheetをDBとしたオンラインスコアランキングなる機能も実装しました。<br>
+            初めてのゲームとネットワークの連携昨日の実装でしたが、慣れないJavascirptを勉強しつつ実装しました。<br><br>
+            <iframe width="980" height="551" src="https://www.youtube.com/embed/hGCitr9zpgU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
+            <h2 id="vrchat">Unity - 共同制作物</h2>
             <h3 id="vc_stage1">VRChatイベント「VirtualCollection Stage.1」</h3>
             <b>公演日:</b> 2019/03/02<br>
-            <b>プラットフォーム:</b> VRChat<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             VirtualCollectionとは、VR空間内でファッションショーをするイベントです。<br>
             私自身はそのイベントの中の演出を作っていたため、制作物として載せています。<br>
@@ -90,31 +112,9 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe><br>
 
-            <h3>VRchatワールド「別荘」</h3>
-            <b>動画公開日:</b> 2019/05/07<br>
-            <b>プラットフォーム:</b> VRChat<br>
-            <b>概要と所見:</b><br>
-            VR空間内に家が欲しいという願望から出来たものです。<br>
-            これを作る際に見た目と音を重視して作成したため、シーン自体はサンプルそのものを使用しています。<br>
-            特に、窓ガラスのぼやけ具合や扉を開ける音を重視してワールドを作りました。<br><br>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ig5EFoScI9s" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
-
-            <h3>VRChatワールド「No time.」</h3>
-            <b>公演日:</b> 2019/07/18<br>
-            <b>プラットフォーム:</b> VRChat<br>
-            <b>概要と所見:</b><br>
-            のんびりと人が集まれる場所を目指して製作したVRChatのワールドになります。<br>
-            このワールドはVR Architecture Award(VRAA) 01というコンテストにも応募した作品であり、選外佳作にも選ばれました。<br>
-            最初はただのんびりと過ごせるような空間を作る予定でしたが、少し哀しさを取り入れるため、モノクロにしました。<br>
-            360°画像ですので、好きな視点からご覧ください。<br><br>
-            <iframe frameborder="0" src="https://vrchive.com/e/rgni/r1p0?play_btn=1"
-                allowfullscreen="true"></iframe><br>
-
             <h3 id="vc_stage2">VRChatイベント「VirtualCollection Stage.2」</h3>
             <b>公演日:</b> 2019/09/07 and 2019/09/14<br>
-            <b>プラットフォーム:</b> VRChat<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             先程の<a href="#vc_stage1">stage.1</a>の続きになるイベントになります。<br>
             この回でも私は演出を制作しているため、同様に制作物として掲載しています。<br>
@@ -134,7 +134,7 @@
 
             <h3>VRChatイベント「VirtualCollection VRoidStage」</h3>
             <b>公演日:</b> 2020/04/11<br>
-            <b>プラットフォーム:</b> VRChat<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             <a href="#vc_stage2">stage.2</a>の続きになるイベントになります。<br>
             この回でも私は演出を制作しているため、同様に制作物として掲載しています。<br>
@@ -146,60 +146,75 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
+            <h3>VRChatイベント「盛夏音祭'20」</h3>
+            <b>公演日:</b> 2020/07/31～2020/08/02<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
+            <b>概要と所見:</b><br>
+            VRChatで行われたかなり大規模の夏フェスイベントになります。<br>
+            私の制作物としては、演者が出る際の後ろの映像と筒、およびそれの動作ロジックと会場の細かいロジック周りを担当しました。<br>
+            演者関係の制作物は、シェーダーを一から書いたりアニメーションを組んだりしました。完全自作物のみです。<br>
+            ロジック周りは、VRChatSDKのトリガーを使用し、Unityの機能をフル活用しながら組んでいます。<br>
+            加えて、カメラによる映像の無限ループを防止するためのシェーダーを書いたり等の裏方制作もしていました。<br>
+            このイベントに向けた制作に関しては、とにかく2週間無い中で作り切らなければいけなかったのが非常に大変でしたが、その中でも最高の物を作るために本気で作りました。<br>
+            ビジュアル的な制作についてはこれが今の私の本気だと思います。<br><br>
+            <iframe width="980" height="551" src="https://www.youtube.com/embed/xKF1r_6IKPI" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
             <h2 id="shader">シェーダー</h2>
             <h3 id="telephoto">シェーダー「空間を移動する写真」</h3>
             <b>公開日:</b> 2019/02/14<br>
-            <b>プラットフォーム:</b> StandardUnity<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要:</b><br>
             見た目の通り額の外には絵が表示されないという今までの写真立てを少し拡張したようなものです。<br><br>
             <video src="video/photoframe.mp4" poster="video/thmb/photoframe.png" controls playsinline></video><br>
 
             <h3>シェーダー「現実のLEDディスプレイもどき」</h3>
             <b>公開日:</b> 2019/05/11<br>
-            <b>プラットフォーム:</b> StandardUnity<br>
+            <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要:</b><br>
             現実のLEDディスプレイで見る干渉縞も含めて再現したものです。<br><br>
             <img src="https://pbs.twimg.com/media/D6RyufPV4AEPR9A?format=png&name=small"></image><br>
 
             <h3>シェーダー「SpongeTunnel」</h3>
             <b>公開日:</b> 2019/07/10<br>
-            <b>プラットフォーム:</b> NEORT<br>
+            <b>公開場所:</b> <a href="https://neort.io/art/bkkshgk3p9f7drq1j2q0" target="_blank"
+                rel="noopener noreferrer">NEORT</a><br>
+            <b>開発プラットフォーム:</b> NEORT<br>
             <b>概要:</b><br>
             メンガースポンジと呼ばれる形状を用いた吸い込まれそうになるレイマーチングになります。<br><br>
             <video src="video/SpongeTunnel.mp4" poster="video/thmb/SpongeTunnel.png" controls playsinline></video><br>
 
             <h3>シェーダー「Clock Tunnel」</h3>
             <b>公開日:</b> 2019/07/18<br>
-            <b>プラットフォーム:</b> NEORT<br>
+            <b>公開場所:</b> <a href="https://neort.io/art/bknjrq43p9f7drq1jdmg" target="_blank"
+                rel="noopener noreferrer">NEORT</a><br>
+            <b>開発プラットフォーム:</b> NEORT<br>
             <b>概要:</b><br>
             VRChat内でライブコーディングバトルをした際に製作したレイマーチングになります。<br><br>
             <video src="video/Clock Tunnel.mp4" poster="video/thmb/Clock Tunnel.png" controls playsinline></video><br>
 
             <h3>シェーダー「Mutual World」</h3>
             <b>公開日:</b> 2019/08/03<br>
-            <b>プラットフォーム:</b> NEORT<br>
+            <b>公開場所:</b> <a href="https://neort.io/art/bl2ooq43p9fafudebap0" target="_blank"
+                rel="noopener noreferrer">NEORT</a><br>
+            <b>開発プラットフォーム:</b> NEORT<br>
             <b>概要:</b><br>
             中心の物体の座標情報を背景の色合いに使用したりと手前と奥で情報を取り合う形となっているレイマーチングになります。<br><br>
             <video src="video/Mutual World.mp4" poster="video/thmb/Mutual World.png" controls playsinline></video><br>
 
-            <h3>シェーダー「Circle "NOT" Cylinder」</h3>
-            <b>公開日:</b> 2019/08/16<br>
-            <b>プラットフォーム:</b> NEORT<br>
-            <b>概要:</b><br>
-            背景となる12角形の角柱とBPM132のテンポに乗ったCubeが組み合わさったレイマーチングになります。<br><br>
-            <video src="video/Circle NOT Cylinder.mp4" poster="video/thmb/Circle NOT Cylinder.png" controls
-                playsinline></video><br>
-
             <h3>シェーダー「URPコーディング」</h3>
             <b>公開日:</b> 2019/10/03<br>
-            <b>プラットフォーム:</b> URPUnity<br>
+            <b>開発プラットフォーム:</b> URPUnity<br>
             <b>概要:</b><br>
             コーディングのみでURPに対応するPBRシェーダーを製作しました。<br><br>
             <img src="video/thmb/URP.PNG"></image><br>
 
             <h3>シェーダー「Darkness module」</h3>
             <b>公開日:</b> 2019/12/12<br>
-            <b>プラットフォーム:</b> NEORT<br>
+            <b>公開場所:</b> <a href="https://neort.io/art/bnoqps43p9f5erb53rig" target="_blank"
+                rel="noopener noreferrer">NEORT</a><br>
+            <b>開発プラットフォーム:</b> NEORT<br>
             <b>概要:</b><br>
             手前にあるCubeとSphereを通すと背景がはっきりと見えるといったスポットライト的表現をしたレイマーチングになります。<br><br>
             <video src="video/Darkness module.mp4" poster="video/thmb/Darkness module.png" controls
@@ -207,7 +222,9 @@
 
             <h3>シェーダー「6 Side Raymaarching and Photoframe」</h3>
             <b>公開日:</b> 2019/12/16<br>
-            <b>プラットフォーム:</b> VRchat<br>
+            <b>公開場所:</b> <a href="https://www.vrchat.com/i/feud-aggrievegood-f2b64" target="_blank"
+                rel="noopener noreferrer">VRChat</a><br>
+            <b>開発プラットフォーム:</b> VRchat<br>
             <b>概要:</b><br>
             6面全てに異なるレイマーチングが映っているものと昔に作成した「<a href="#telephoto">空間を移動する写真</a>」を改良して影を落とすようにしたものです。<br>
             両方ともVRChat内で行われたシェーダー展示会「ShaderFes2019」に出店しました。<br><br>
@@ -216,7 +233,8 @@
             <h2 id="intern">インターン</h2>
             <h3>clusterインターン作品 その1</h3>
             <b>公開日:</b> 2019/06/01<br>
-            <b>プラットフォーム:</b> cluster<br>
+            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank"
+                rel="noopener noreferrer">cluster</a><br><br>
             <b>概要と所見:</b><br>
             クラスター株式会社でインターンした際の成果の一つで、波紋をシェーダーで表現しました。<br>
             テクスチャは使用しておらず、シェーダーのみで実装しました。<br>
@@ -228,7 +246,8 @@
 
             <h3>clusterインターン作品 その2</h3>
             <b>公開日:</b> 2019年8月頃<br>
-            <b>プラットフォーム:</b> cluster<br>
+            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank"
+                rel="noopener noreferrer">cluster</a><br><br>
             <b>概要と所見:</b><br>
             クラスターのインターンでのまた別の制作物です。<br>
             壁の部分が音に合わせて変化する仕組みを作りました。（ライトとビームは別の方が作っています。）<br>
