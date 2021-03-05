@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>Portfolio - Product</title>
     <link rel="stylesheet" type="text/css" href="css/product.css">
-    <link rel="shortcut icon" href="image/favicon.PNG">
+    <link rel="shortcut icon" href="images/favicon.PNG">
+    <link rel="stylesheet" type="text/css" href="css/bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="javascript/product_bxslider.js" type="text/javascript"></script>
+    <span itemprop="datePublished" content="2021-03-05">2021年3月5日更新</span>
 </head>
 
 <body>
@@ -22,9 +27,6 @@
 
         <div class="sidebar">
             <div class="barspace"></div>
-            <a href="./index.html">
-                <div class="slidebar">Title</div>
-            </a>
             <a href="./about.html">
                 <div class="slidebar">About</div>
             </a>
@@ -32,7 +34,9 @@
             <a href="./contact.html">
                 <div class="slidebar">Contact</div>
             </a>
-            <p>&copy; 2020 hatuxes</p>
+            <a href="https://hatuxes.hatenablog.jp/entry/2019/11/06/141649" target="_blank" rel="noopener noreferrer">
+                <div class="slidebar">Blog</div>
+            </a>
         </div>
     </header>
 
@@ -60,22 +64,13 @@
             <div id="top"></div>
             <h1><b>制作物</b></h1>
             カテゴリーごと、公開日順に表示しています。<br>
-            NEORTやUnityの画面は再生時に重みがある場合があるため、ご注意ください。<br>
+            NEORTやUnityの画面は再生時に描画負荷がかかるため、グラフィックボードを付けている方のみ再生することをお勧めします。<br>
             <h2 id="personalproduction">Unity - 個人制作物</h2>
-            <!--<h3 id="soundanalize">AudioVisualizer</h3>
-            <b>公開日:</b> 2019/10/29<br>
-            <b>開発プラットフォーム:</b> Unity Build-in<br>
-            <b>概要と所見:</b><br>
-            インターンで生かした経験をもとに、スピーカーから音を解析してそれをスポットライトの色に反映しています。<br>
-            大学の講義で音の基本原理等のことについては少し知識があったため、実現することが出来ました。<br>
-            音楽のテンションに応じてライトの発光度、Rangeを変えるのが難しかったですが、サンプリング数を調整することによって解決することが出来ました。<br>
-            （Music by Shadow -Bustre-）<br><br>
-            <video src="video/AudioVisualizer.mp4" poster="video/thmb/AudioVisual.png" controls playsinline></video><br>-->
-
             <h3>No time.</h3>
             <b>公演日:</b> 2019/07/18<br>
-            <b>公開場所:</b> <a href="https://www.vrchat.com/i/hope-gunterstop-36be6" target="_blank"
-                rel="noopener noreferrer">VRChat</a><br>
+            <b>公開場所:</b> <a
+                href="https://www.vrchat.com/home/launch?worldId=wrld_98bacd30-ee43-44f6-930d-5da5f8ee4883&instanceId=9173"
+                target="_blank" rel="noopener noreferrer">VRChat</a><br>
             <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要と所見:</b><br>
             のんびりと人が集まれる場所を目指して製作したVRChatのワールドになります。<br>
@@ -83,9 +78,13 @@
                 Award(VRAA) 01</a>というコンテストにも応募した作品であり、選外佳作にも選ばれました。<br>
             最初はただのんびりと過ごせるような空間を作る予定でしたが、少し哀しさを取り入れるため、モノクロにしました。<br>
             若干の隠し要素を設けており、隠し要素を少しずつ進めて行くとRPGのようなワクワク感が得られるのが特徴になっています。<br><br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sv5a53eEC_k" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
+            <div class="bxslider">
+                <li data-youtubeid="sv5a53eEC_k"></li>
+                <li><img src="images/notime1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/notime2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/notime3.png" width="560" height="315" alt=""></li>
+                <li><img src="images/notime4.png" width="560" height="315" alt=""></li>
+            </div>
 
             <h3>Star Fall</h3>
             <b>公開日:</b> 2020/03/16<br>
@@ -100,7 +99,13 @@
             加えて、背景はシェーダーで動かしています。<br>
             ソフト自体は<a href="https://github.com/mtytheone/StarFall/releases" target="_blank"
                 rel="noopener noreferrer">Github</a>でリリースしていますので、良かったら一度遊んでください。<br><br>
-            <video src="video/StarFallVideo.mp4" poster="video/thmb/StarFall.png" controls playsinline></video><br>
+            <div class="bxslider">
+                <li><video src="video/StarFallVideo.mp4" poster="images/thmb/StarFall.png" controls playsinline></video>
+                </li>
+                <li><img src="images/StarFall1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/StarFall2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/StarFall3.png" width="560" height="315" alt=""></li>
+            </div>
 
             <h3>UnitBarrage</h3>
             <b>公開日:</b> 2020/10/05<br>
@@ -114,62 +119,108 @@
             数少ない情報を頼りに出来る部分を自分で研究しながらなんとか形にすることが出来たと思っています。<br>
             おまけとして、GoogleSpreadSheetをDBとしたオンラインスコアランキングなる機能も実装しました。<br>
             初めてゲームとネットワークの連携機能を実装しましたが、慣れないJavascirptにかなり苦戦しました。<br><br>
-            <iframe width="980" height="551" src="https://www.youtube.com/embed/hGCitr9zpgU" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="bxslider">
+                <li data-youtubeid="hGCitr9zpgU"></li>
+                <li><img src="images/UnitBarrage1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/UnitBarrage2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/UnitBarrage3.png" width="560" height="315" alt=""></li>
+            </div>
 
             <h2 id="coproduction">Unity - 共同制作物</h2>
-            <h3 id="vc_stage1">VirtualCollection Stage.1</h3>
-            <b>公演日:</b> 2019/03/02<br>
+            <h3>VirtualCollection</h3>
             <b>開発プラットフォーム:</b> Unity Build-in<br>
-            <b>概要と所見:</b><br>
-            VirtualCollectionとは、VR空間内でファッションショーをするイベントです。<br>
+            <b>概要:</b><br>
+            <a href="https://virtualcolle.wixsite.com/info" target="_blank"
+                rel="noopener noreferrer">VirtualCollection</a>とは、VR空間内でファッションショーをするイベントです。<br>
             私自身はそのイベントの中の演出を作っていたため、制作物として載せています。<br>
             VRChat内では当時C#スクリプトは一切使えず、SDK内にあるトリガーとUnityの機能のみが使用出来ます。<br>
-            そのため、システムを構築する際、VRChatSDK内のトリガーとUnityのAnimator、そしてシェーダーを組み合わせて演出を作りました。<br><br>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r87F8HAUBGs" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
+            そのため、システムを構築する際、VRChatSDK内のトリガーとUnityのAnimator、そしてシェーダーを組み合わせて演出を作りました。<br>
+            また、各ステージ毎に新しい事に挑戦しており、Stage.1の際は「シェーダーを使って見た目に幅を持たせること」<br>
+            Stage.2では「前回より見た目をリッチにすること」「A会場とB会場でイメージを分けること」「Gitを用いて複数人で制作すること」「より自然な演出を作ること」<br>
+            それ以降では、「配信映えする演出やシステムを構築すること」「アセットを管理しやすくすること」に挑戦してきました。<br><br>
 
-            <h3 id="vc_stage2">VirtualCollection Stage.2</h3>
+            <h4>概要と制作物紹介</h4>
+            <div class="bxslider">
+                <li data-youtubeid="dVsz2_y8ViA"></li>
+                <li data-youtubeid="bi_2Mp-5Lkw"></li>
+                <li data-youtubeid="R5gnb0KZpQw"></li>
+                <li data-youtubeid="pzv8l36vQQU"></li>
+                <li data-youtubeid="6x9rtEGTDck"></li>
+                <li data-youtubeid="D25iSbBWMPA"></li>
+                <li data-youtubeid="tq7tveApDzs"></li>
+                <li data-youtubeid="9a6FNQXrx6Y"></li>
+            </div>
+
+            <h4>イベントアーカイブ</h4>
+            <div class="bxslider">
+                <li data-youtubeid="r87F8HAUBGs"></li>
+                <li data-youtubeid="TpsLX6o5K9I"></li>
+                <li data-youtubeid="kJ_1-L0FqLk"></li>
+                <li data-youtubeid="phOSFnjWp9U"></li>
+                <li data-youtubeid="0j-081SSQT8"></li>
+            </div>
+
+            <!-- <h4 id="vc_stage1">VirtualCollection Stage.1</h4>
+            <b>公演日:</b> 2019/03/02<br>
+            <b>所見:</b><br>
+            この回では、シェーダーを使って見た目に幅を持たせることに挑戦しました。<br><br>
+            <div class="bxslider">
+                <li data-youtubeid="r87F8HAUBGs"></li>
+                <li><img src="video/thmb/AudioVisual.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Circle NOT Cylinder.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Clock Tunnel.png" width="500" height="300" alt=""></li>
+            </div><br>
+
+            <h4 id="vc_stage2">VirtualCollection Stage.2</h4>
             <b>公演日:</b> 2019/09/07 and 2019/09/14<br>
-            <b>開発プラットフォーム:</b> Unity Build-in<br>
-            <b>概要と所見:</b><br>
+            <b>所見:</b><br>
             先程の<a href="#vc_stage1">stage.1</a>の続きになるイベントになります。<br>
-            この回でも私は演出を制作しているため、同様に制作物として掲載しています。<br>
-            この時は大真面目にファッションショーをするというコンセプトであったため、見た目の部分でもリッチさを出しています。<br>
-            また、A会場とB会場の二種類を製作しており、A会場は夜のような雰囲気、B会場は昼のような雰囲気になっています。<br>
-            特に力を入れたところは、奥のノイズスクリーンとお客さんの移動、そして二会場の印象分けです。<br>
-            さらに、stage.2ではGitを使って数人で会場制作をしました。<br><br>
+            この回では、「前回より見た目をリッチにすること」「A会場とB会場でイメージを分けること」<br>
+            「Gitを用いて複数人で制作すること」「より自然な演出を作ること」に挑戦しました。<br>
 
-            <h4>A会場</h4>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TpsLX6o5K9I" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
-            <h4>B会場</h4>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kJ_1-L0FqLk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
+            <h5>A会場</h5>
+            <div class="bxslider">
+                <li data-youtubeid="TpsLX6o5K9I"></li>
+                <li><img src="video/thmb/AudioVisual.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Circle NOT Cylinder.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Clock Tunnel.png" width="500" height="300" alt=""></li>
+            </div>
 
-            <h3>VirtualCollection VRoidStage</h3>
+            <h5>B会場</h5>
+            <div class="bxslider">
+                <li data-youtubeid="kJ_1-L0FqLk"></li>
+                <li><img src="video/thmb/AudioVisual.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Circle NOT Cylinder.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Clock Tunnel.png" width="500" height="300" alt=""></li>
+            </div><br>
+
+            <h4 id="vc_vroidstage">VirtualCollection VRoidStage</h4>
             <b>公演日:</b> 2020/04/11<br>
-            <b>開発プラットフォーム:</b> Unity Build-in<br>
-            <b>概要と所見:</b><br>
+            <b>所見:</b><br>
             <a href="#vc_stage2">stage.2</a>の続きになるイベントになります。<br>
-            この回でも私は演出を制作しているため、同様に制作物として掲載しています。<br>
-            この時は、VRoidと呼ばれるアバターに焦点を当ててファッションショーをしました。<br>
-            タイトルをナンバリングしていないので、本ステージではなく小さめのステージとしてイベントは開催されました。<br>
-            そのため、会場のモデルはstage.2のものを使っています。<br>
-            しかし、配信に移すフレームなどをシェーダーで現地から切り替えれるようにしたり、カメラを会場内から<br>
-            切り替えれるようにしたりと配信映えするようなところには、今回力を加えました。<br><br>
-            <iframe width="980" height="551" src="https://www.youtube.com/embed/phOSFnjWp9U" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            この回では、「出演アバター情報を配信でも見やすくすること」「配信映えするような演出を作ること」「アセットを管理しやすいようにすること」に挑戦しました。<br><br>
+            <div class="bxslider">
+                <li data-youtubeid="phOSFnjWp9U"></li>
+                <li><img src="video/thmb/AudioVisual.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Circle NOT Cylinder.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Clock Tunnel.png" width="500" height="300" alt=""></li>
+            </div>
+
+            <h4>VirtualCollection Men'sStage</h4>
+            <b>公演日:</b> 2020/11/28<br>
+            <b>所見:</b><br>
+            この回では、色々な人と協力して「アバターに沿った演出を組むこと」に挑戦しました。<br><br>
+            <div class="bxslider">
+                <li data-youtubeid="0j-081SSQT8"></li>
+                <li><img src="video/thmb/AudioVisual.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Circle NOT Cylinder.png" width="500" height="300" alt=""></li>
+                <li><img src="video/thmb/Clock Tunnel.png" width="500" height="300" alt=""></li>
+            </div> -->
 
             <h3>盛夏音祭'20</h3>
             <b>公演日:</b> 2020/07/31～2020/08/02<br>
             <b>開発プラットフォーム:</b> Unity Build-in<br>
-            <b>概要と所見:</b><br>
+            <b>所見:</b><br>
             VRChatで行われた大規模な夏フェスイベントになります。<br>
             私の制作物としては、演者が出る際の後ろの映像と筒、およびそれの動作ロジックと会場の細かいロジック周りを担当しました。<br>
             演者関係の制作物は、シェーダーを一から書いたりアニメーションを組んだりしました。完全自作物のみです。<br>
@@ -177,9 +228,27 @@
             加えて、カメラによる映像の無限ループを防止するためのシェーダーを書いたり等の裏方制作もしていました。<br>
             このイベントに向けた制作に関しては、とにかく2週間無い中で作り切らなければいけなかったのが非常に大変でしたが、その中でも最高の物を作るために本気で作りました。<br>
             ビジュアル的な制作についてはこれが今の私の本気だと思います。<br><br>
-            <iframe width="980" height="551" src="https://www.youtube.com/embed/xKF1r_6IKPI" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="bxslider">
+                <li data-youtubeid="3O9L3JjvFsQ"></li>
+                <li data-youtubeid="8k_JsPx_0pM"></li>
+                <li data-youtubeid="xKF1r_6IKPI"></li>
+                <li><video src="video/Seika_OpeningEffect.mp4" poster="images/thmb/Seika_OpeninEffect_thmb.png" controls
+                        playsinline></video>
+                </li>
+                <li><video src="video/Seika_ClosingEffect.mp4" poster="images/thmb/Seika_ClosingEffet_thmb.png" controls
+                        playsinline></video>
+                </li>
+                <li><video src="video/Seika_PPS.mp4" poster="images/thmb/Seika_PPS_thmb.png" controls
+                        playsinline></video>
+                </li>
+                <li><img src="images/Seika_1.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Seika_2.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Seika_3.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Seika_4.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Seika_5.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Seika_6.png" width="500" height="300" alt=""></li>
+                <li><img src="images/seika_7.png" width="500" height="300" alt=""></li>
+            </div>
 
             <h3>バーチャル学会2020</h3>
             <b>開催日:</b> 2020/12/12<br>
@@ -188,20 +257,99 @@
             VRChatで行われた学会になります。イベントの詳しい内容は<a href="https://sites.google.com/view/virtualconference2020" target="_blank"
                 rel="noopener noreferrer">公式サイト</a>をご覧ください。<br>
             私は会場の制作に携わっていました。<br>
-            特に私の制作物としては、会場の背景となるモデル及びエフェクトの制作をしました。<br>
+            特に私の制作物としては、会場の背景となるモデル及びエフェクト、そしてSkyboxに使うシェーダーを制作をしました。<br>
             学会という硬いテーマを持つイベントであったため、あまり背景として主張し過ぎずにシンプルなトーンをイメージして作りました。<br><br>
-            <iframe width="980" height="551" src="https://www.youtube.com/embed/C6P-gNVypdk" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="bxslider">
+                <li data-youtubeid="DBm-P0Lz6Kc"></li>
+                <li data-youtubeid="C6P-gNVypdk"></li>
+                <li><img src="images/VRCF_1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/VRCF_2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/VRCF_3.png" width="560" height="315" alt=""></li>
+            </div>
 
 
             <h2 id="shader">シェーダー</h2>
-            <h3 id="telephoto">空間を移動する写真</h3>
+            <b>概要:</b><br>
+            主な作品を以下の動画にまとめています。<br>
+            言語についてはHLSLとGLSLを触っています。<br>
+            HLSLはUnity向けのシェーダーを記述するために使用しており、GLSLはコードのみで絵作りをする際に使用しています。<br><br>
+            <div data-youtubeid="OB_i650cBqk"></div>
+
+            <h3>HLSL</h3>
+            <div class="bxslider">
+                <li><img src="images/Shader_1.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_2.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_3.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_4.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_5.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_6.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_7.gif" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_8.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_9.gif" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_10.gif" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_11.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_12.png" width="500" height="300" alt=""></li>
+                <li><img src="images/Shader_13.gif" width="500" height="300" alt=""></li>
+            </div>
+
+            <h3>GLSL</h3>
+            <div class="bxslider">
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bkkshgk3p9f7drq1j2q0?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bkmuvgs3p9f7drq1jbk0?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bknjrq43p9f7drq1jdmg?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bkq15ek3p9f7drq1jo50?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bl2ooq43p9fafudebap0?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bnoqps43p9f5erb53rig?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bqa8sgc3p9f6qoqnn10g?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+                <li><iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;"
+                        src="https://neort.io/embed/bvota6s3p9f30ks56j60?autoStart=false&quality=2&info=true"
+                        frameborder="0"
+                        sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                        allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true"
+                        allowtransparency="true"></iframe></li>
+            </div>
+
+            <!-- <h3 id="telephoto">空間を移動する写真</h3>
             <b>公開日:</b> 2019/02/14<br>
             <b>開発プラットフォーム:</b> Unity Build-in<br>
             <b>概要:</b><br>
             見た目の通り額の外には絵が表示されないという今までの写真立てを少し拡張したようなものです。<br><br>
-            <video src="video/photoframe.mp4" poster="video/thmb/photoframe.png" controls playsinline></video><br>
+            <video src="video/photoframe.mp4" poster="images/thmb/photoframe.png" controls playsinline></video><br>
 
             <h3>現実のLEDディスプレイもどき</h3>
             <b>公開日:</b> 2019/05/11<br>
@@ -281,34 +429,60 @@
             <b>概要:</b><br>
             6面全てに異なるレイマーチングが映っているものと昔に作成した「<a href="#telephoto">空間を移動する写真</a>」を改良して影を落とすようにしたものです。<br>
             両方ともVRChat内で行われたシェーダー展示会「ShaderFes2019」に出店しました。<br><br>
-            <video src="video/ShaderFes.mp4" poster="video/thmb/ShaderFes.png" controls playsinline></video><br>
+            <video src="video/ShaderFes.mp4" poster="images/thmb/ShaderFes.png" controls playsinline></video><br>-->
 
             <h2 id="intern">インターン</h2>
             <h3>clusterインターン作品 その1</h3>
             <b>公開日:</b> 2019/06/01<br>
-            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank"
-                rel="noopener noreferrer">cluster</a><br><br>
+            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank" rel="noopener noreferrer">cluster</a><br>
             <b>概要と所見:</b><br>
             クラスター株式会社でインターンした際の成果の一つで、波紋をシェーダーで表現しました。<br>
             テクスチャは使用しておらず、シェーダーのみで実装しました。<br>
             波紋を重ねるという表現を作るのがかなり難しかったですが、幾度となく和で処理することでなんとか表現することが出来ました。<br>
-            （画像は同インターンメンバー<a href="https://twitter.com/cakemas0227" target="_blank"
+            （一部画像は同インターンメンバー<a href="https://twitter.com/cakemas0227" target="_blank"
                 rel="noopener noreferrer">mikopom氏</a>のツイートより）<br><br>
-            <img src="https://pbs.twimg.com/media/D7-mUMCUcAAFDhn?format=jpg&name=small"></image><br>
-            <img src="https://pbs.twimg.com/media/D7-oCiMUcAAMLwk?format=jpg&name=small"></image><br>
+            <div class="bxslider">
+                <li><img src="https://pbs.twimg.com/media/D7-mUMCUcAAFDhn?format=jpg&name=small"></image>
+                </li>
+                <li><img src="https://pbs.twimg.com/media/D7-oCiMUcAAMLwk?format=jpg&name=small"></image>
+                </li>
+            </div>
 
             <h3>clusterインターン作品 その2</h3>
             <b>公開日:</b> 2019年8月頃<br>
-            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank"
-                rel="noopener noreferrer">cluster</a><br><br>
+            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank" rel="noopener noreferrer">cluster</a><br>
             <b>概要と所見:</b><br>
             クラスターのインターンでのまた別の制作物です。<br>
             壁の部分が音に合わせて変化する仕組みを作りました。（ライトとビームは別の方が作っています。）<br>
             音を拾うという実装はかなり簡単でしたが、そこから周波数で分けたり等が大変でした。<br>
             また、ただ音を拾って実装しただけだと見た目が寂しくなってしまったため、迫力を音から計算して壁の色や速度に実装しています。<br>
-            （Music by Shadow -Bustre-）<br><br>
-            <video src="video/cluster visualizer.mp4" poster="video/thmb/clustervisualizer.png" controls
-                playsinline></video><br>
+            Music by AMOKA "Welcome to the Virtual Reality World"）<br><br>
+            <div class="bxslider">
+                <li><video src="video/cluster_visualizer.mp4" poster="images/thmb/clustervisualizer.png" controls
+                        playsinline></video>
+                </li>
+                <li><img src="images/Cluster2_1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/Cluster2_2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/Cluster2_3.png" width="560" height="315" alt=""></li>
+                <li><img src="images/Cluster2_4.png" width="560" height="315" alt=""></li>
+            </div>
+
+            <h3>clusterインターン作品 その3</h3>
+            <b>公開日:</b> 2019/06/15<br>
+            <b>開発プラットフォーム:</b> <a href="https://cluster.mu/" target="_blank" rel="noopener noreferrer">cluster</a><br>
+            <b>概要と所見:</b><br>
+            クラスターのインターンでのまた別の制作物です。<br>
+            clusterの公式キャラクターである「くらすたーちゃん」の<a href="https://cluster.mu/e/41fe47c6-32c0-11ea-ba92-0ef3638656a6"
+                target="_blank" rel="noopener noreferrer">初単独ライブイベント</a>において、一部演出に使用されているシェーダーの制作をしました。<br>
+            シェーダーとしては、動画の黒くなっている部分を透明化してアウトプットするといったものです。<br>
+            実際のイベントでは、動くギターの画像や動く文字の部分等に使用されました。<br>
+            （画像はYoutubeの動画内のものを使用しています）<br><br>
+            <div class="bxslider">
+                <li data-youtubeid="FIB3e-hhgwo"></li>
+                <li><img src="images/Cluster3_1.png" width="560" height="315" alt=""></li>
+                <li><img src="images/Cluster3_2.png" width="560" height="315" alt=""></li>
+                <li><img src="images/Cluster3_3.png" width="560" height="315" alt=""></li>
+            </div><br>
         </div>
     </main>
 </body>

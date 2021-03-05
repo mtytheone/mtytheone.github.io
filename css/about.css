@@ -230,22 +230,7 @@
         border-bottom: 2px solid #000;
     }
     
-    #top{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #general{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #language{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #tool{
+    #top, #general, #idea, #language, #tool{
         margin-top: -75px;
         padding-top: 90px;
     }
@@ -515,22 +500,7 @@
         border-bottom: 2px solid #000;
     }
     
-    #top{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #general{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #language{
-        margin-top: -75px;
-        padding-top: 90px;
-    }
-    
-    #tool{
+    #top, #general, #idea, #language, #tool{
         margin-top: -75px;
         padding-top: 90px;
     }

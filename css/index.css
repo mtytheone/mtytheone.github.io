@@ -4,6 +4,37 @@ body {
     color: #daf6ff;
 }
 
+#bg-video{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url("../images/BackgroundImage.gif") no-repeat;
+    background-size: cover;
+}
+@media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) 
+{
+    #bg-video {
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media (max-aspect-ratio: 16/9) 
+{
+    #bg-video {
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 .PC {
     display: table;
     width: 200px;
@@ -16,21 +47,23 @@ body {
 
 .PC a {
     display: table-cell;
-    font-size: 3em;
+    font-size: 6em;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
     transition: background 1s, border-width 0.5s cubic-bezier(0.075,0.82,0.165,1), text-shadow 0.5s;
-    color: #daf6ff;
-    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10,175,230,0);
+    color: #313131;
+    -webkit-text-stroke: 1.25px rgb(172, 172, 172);
+    text-shadow: 0 0 20px #fff, 0 0 20px rgba(10,175,230,0);
     box-shadow: 0 0 0 rgba(10,175,230,0), inset 0 0 0 rgba(10,175,230,0);
     background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0) 0%,rgba(10,175,230,0) 90%);
-    border: 0 dotted rgba(10,175,230,0);
+    border: 5 dotted rgba(10,175,230,0);
 }
 
 .PC a:hover {
     color: #fff;
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
     text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
     background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0.3) 0%,rgba(10,175,230,0) 60%);
 }
@@ -50,49 +83,49 @@ body {
 }
 
 .PC:before {
-    animation: rotate 9s linear 0s infinite reverse;
-    width: 80%;
-    height: 80%;
+    animation: rotate 5s linear 0s infinite;
+    width: 60%;
+    height: 60%;
     border: 3px dotted rgba(10,175,230,0.03);
     z-index: -1;
 }
 
 .PC:after {
     animation: rotate 12s linear 0s infinite reverse;
-    border: 70px dashed rgba(10,175,230,0.01);
-    width: 120%;
-    height: 120%;
+    border: 50px dashed rgba(10,175,230,0.01);
+    width: 150%;
+    height: 150%;
     z-index: -2;
 }
 
 .PC a:before {
-    animation: rotate 12s linear 0s infinite;
-    width: 117%;
-    height: 117%;
-    border: 40px dashed rgba(10,175,230,0.015);
+    animation: rotate 6s linear 0s infinite reverse;
+    width: 95%;
+    height: 95%;
+    border: 10px dashed rgba(10,175,230,0.015);
 }
 
 .PC a:after {
-    animation: rotate 4s linear 0s infinite;
+    animation: rotate 4s linear 0s infinite reverse;
     border: 10px dashed rgba(10,175,230,0);
     width: 30%;
     height: 30%;
 }
 
 .PC:hover:before {
-    border-color: rgba(10,175,230,0.7);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .PC:hover:after {
-    border-color: rgba(10,175,230,0.1);
+    border-color: rgba(10, 230, 83, 0.5);
 }
 
 .PC:hover a:before {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 0, 0, 0.6);
 }
 
 .PC:hover a:after {
-    border-color: rgba(10,175,230,0.4);
+    border-color: rgba(215, 230, 10, 0.7);
 }
 
 .Mobile {
@@ -107,14 +140,15 @@ body {
 
 .Mobile a {
     display: table-cell;
-    font-size: 3em;
+    font-size: 6em;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
     transition: background 1s, border-width 0.5s cubic-bezier(0.075,0.82,0.165,1), text-shadow 0.5s;
-    color: #daf6ff;
-    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10,175,230,0);
+    color: #313131;
+    -webkit-text-stroke: 1.25px rgb(172, 172, 172);
+    text-shadow: 0 0 20px #fff, 0 0 20px rgba(10,175,230,0);
     box-shadow: 0 0 0 rgba(10,175,230,0), inset 0 0 0 rgba(10,175,230,0);
     background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0) 0%,rgba(10,175,230,0) 90%);
     border: 0 dotted rgba(10,175,230,0);
@@ -122,6 +156,7 @@ body {
 
 .Mobile a:hover {
     color: #fff;
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
     text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
     background-image: radial-gradient(center,ellipse cover,rgba(10,175,230,0.3) 0%,rgba(10,175,230,0) 60%);
 }
@@ -171,19 +206,19 @@ body {
 }
 
 .Mobile:hover:before {
-    border-color: rgba(10,175,230,0.7);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .Mobile:hover:after {
-    border-color: rgba(10,175,230,0.1);
+    border-color: rgba(10, 230, 83, 0.5);
 }
 
 .Mobile:hover a:before {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 0, 0, 0.6);
 }
 
 .Mobile:hover a:after {
-    border-color: rgba(10,175,230,0.4);
+    border-color: rgba(215, 230, 10, 0.7);
 }
 
 @keyframes rotate {
