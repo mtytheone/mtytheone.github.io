@@ -437,6 +437,7 @@ body{
     position: absolute;
     top: 100px;
     left: 20px;
+    right: 20px;
     height: 150%;
     background-color: rgb(255, 255, 255);
 }
@@ -474,25 +475,10 @@ table th, td{
     border-bottom: 2px solid #000;
 }
 
-#top{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#general{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#language{
-    margin-top: -75px;
-    padding-top: 90px;
-}
-
-#tool{
-    margin-top: -75px;
-    padding-top: 90px;
-}
+#top, #general, #idea, #language, #tool{
+        margin-top: -75px;
+        padding-top: 90px;
+    }
 
 @keyframes topmove {
     0% {

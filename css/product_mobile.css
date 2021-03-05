@@ -436,6 +436,7 @@ body{
     position: absolute;
     top: 100px;
     left: 20px;
+    right: 20px;
     height: 150%;
     background-color: rgb(255, 255, 255);
 }
