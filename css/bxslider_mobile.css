@@ -34,7 +34,7 @@ ul.bxslider {
   border: 5px solid #fff;
   background: #fff;
   max-width: 97%!important;
-  max-height: 20%!important;
+  max-height: auto!important;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
