@@ -33,19 +33,6 @@ function youtubeSet() {
 $(function () {
     slider = $('.bxslider').bxSlider({
         onSlideBefore: function ($slideElement, oldIndex, newIndex) {
-            // Youtube
-            var currentYtid = $('.bxslider li').eq(oldIndex + 1).attr('data-youtubeid');
-            if (currentYtid != undefined) {
-                for (var i = 0; i < ytData.length; i++) {
-                    if (ytData[i]['id'] == currentYtid) {
-                        var ytStatus = ytPlayer[i].getPlayerState();
-                        if (ytStatus == 1 || ytStatus == 3) {
-                            ytPlayer[i].pauseVideo();
-                        }
-                    }
-                };
-            }
-
             // videp
             const videos = $slideElement.parent().find('video');
             videos.each(function (index, element) {
