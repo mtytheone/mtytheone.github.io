@@ -473,8 +473,9 @@
     }
     
     .content video, img, iframe, .bxslider li{
-        width: 560px;
-        height: 315px;
+        justify-content: center;
+        width: 768px;
+        height: 432px;
         margin-bottom: 40px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }

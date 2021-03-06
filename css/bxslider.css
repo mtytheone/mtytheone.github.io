@@ -33,8 +33,8 @@ ul.bxslider {
   box-shadow: 0 0 5px #ccc;
   border: 5px solid #fff;
   background: #fff;
-  max-width: 560px!important;
-  max-height: 315px!important;
+  max-width: 768px!important;
+  max-height: 432px!important;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
