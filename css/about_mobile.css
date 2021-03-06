@@ -355,7 +355,7 @@ body{
     }
     
     .fotterback .fotter {
-        width: 40%;
+        width: 60%;
     }
     
     .fotterback .fotter li {
@@ -396,7 +396,6 @@ body{
         left: 190px;
     }
 }
-
 
 .pagetop{
     z-index: 22;
