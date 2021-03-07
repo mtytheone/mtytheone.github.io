@@ -458,16 +458,19 @@ body{
     background-color: black;
 }
 
-.content video, img, iframe, .bxslider li{
-    width: 97%;
-    height: 540px;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+.wide-scroll video, img, iframe {
+    width: 92%;
+    height: 440px;
+    box-shadow: 10px rgba(0, 0, 0, 0.25);
 }
 
-.content video, img, iframe, .bxslider li{
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+.wide-scroll ul{
+	display: flex;
+	overflow-x: scroll;
+}
+.wide-scroll li{
+	min-width: 92%;
+	list-style: none;
 }
 
 #top, #personalproduction, #coproduction, #shader, #intern, #soundanalize, #vc_stage1, #telephoto{
